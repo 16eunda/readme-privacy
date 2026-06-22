@@ -1,0 +1,262 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReadMe - 나만의 편안한 독서 공간</title>
+  <style>
+    :root {
+      --bg: #fff7e8;
+      --card: #ffffff;
+      --text: #2b2b2b;
+      --sub: #6f6256;
+      --point: #7c3aed;
+      --orange: #f59e0b;
+      --pink: #ff4f8b;
+      --line: #eadfce;
+      --soft: #fff1d6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+        "Noto Sans KR", "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #fff7e8 0%, #fffdf8 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 56px 20px 80px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 56px 24px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      box-shadow: 0 14px 40px rgba(86, 63, 38, 0.08);
+    }
+
+    .logo {
+      width: 108px;
+      height: 108px;
+      margin: 0 auto 22px;
+      border-radius: 30px;
+      background: #fffaf0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 54px;
+      border: 3px solid #a06cf5;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+      letter-spacing: -0.05em;
+    }
+
+    .subtitle {
+      margin: 14px auto 0;
+      max-width: 560px;
+      color: var(--sub);
+      font-size: 17px;
+    }
+
+    .badges {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: #9a5b00;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .card {
+      padding: 26px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 8px 24px rgba(86, 63, 38, 0.06);
+    }
+
+    .icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      letter-spacing: -0.03em;
+      color: #3b3028;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .links {
+      margin-top: 28px;
+      padding: 28px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(86, 63, 38, 0.06);
+    }
+
+    a {
+      color: var(--point);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .link-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: #f8f3ff;
+      border: 1px solid #dfd0ff;
+      color: var(--point);
+      font-weight: 700;
+    }
+
+    .contact {
+      margin-top: 18px;
+      color: var(--sub);
+      font-size: 15px;
+    }
+
+    footer {
+      margin-top: 36px;
+      text-align: center;
+      color: var(--sub);
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px) {
+      .wrap {
+        padding: 32px 14px 56px;
+      }
+
+      .hero {
+        padding: 42px 18px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="logo">📖</div>
+      <h1>ReadMe</h1>
+      <p class="subtitle">
+        ReadMe는 EPUB과 TXT 파일을 편하게 읽을 수 있도록 만든
+        나만의 조용하고 편안한 독서 공간입니다.
+      </p>
+      <div class="badges">
+        <span class="badge">EPUB Reader</span>
+        <span class="badge">TXT Reader</span>
+        <span class="badge">Reading Progress</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <div class="icon">📚</div>
+        <h2>파일을 불러와 읽기</h2>
+        <p>
+          사용자가 보유한 EPUB, TXT 파일을 앱에서 불러와 편하게 읽을 수 있습니다.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔖</div>
+        <h2>읽던 위치 저장</h2>
+        <p>
+          책을 다시 열었을 때 이전에 읽던 위치를 이어서 확인할 수 있도록 돕습니다.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌙</div>
+        <h2>편안한 독서 환경</h2>
+        <p>
+          오래 읽어도 부담이 적은 차분한 화면과 독서 중심의 앱 경험을 제공합니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="links">
+      <h2>ReadMe 안내</h2>
+      <p>
+        개인정보 처리, 계정 및 데이터 삭제 요청은 아래 페이지에서 확인할 수 있습니다.
+      </p>
+
+      <div class="link-row">
+        <a class="button" href="./index.html">개인정보처리방침</a>
+        <a class="button" href="./delete-account.html">계정 및 데이터 삭제 요청</a>
+      </div>
+
+      <p class="contact">
+        문의 이메일:
+        <a href="mailto:readme.app.contact@gmail.com">readme.app.contact@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2026 ReadMe. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
+```
